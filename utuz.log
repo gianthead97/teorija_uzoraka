@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  18 FEB 2020 02:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  22 FEB 2020 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -179,18 +179,18 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (./utuz.aux)
 \openout1 = `utuz.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -264,12 +264,12 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -280,26 +280,26 @@ LaTeX Warning: No \author given.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -312,33 +312,33 @@ File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def
 File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 71--87
+Underfull \hbox (badness 10000) in paragraph at lines 72--88
 
  []
 
 <primer1.png, id=13, 607.26875pt x 281.05pt>
 File: primer1.png Graphic file (type png)
 <use primer1.png>
-Package pdftex.def Info: primer1.png  used on input line 90.
+Package pdftex.def Info: primer1.png  used on input line 91.
 (pdftex.def)             Requested size: 303.63364pt x 140.52464pt.
 [2 <./primer1.png>]
 <primer2.png, id=25, 506.89375pt x 215.80624pt>
 File: primer2.png Graphic file (type png)
 <use primer2.png>
-Package pdftex.def Info: primer2.png  used on input line 108.
+Package pdftex.def Info: primer2.png  used on input line 109.
 (pdftex.def)             Requested size: 278.79242pt x 118.69379pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
  []
 
 <primer3.png, id=26, 835.12pt x 397.485pt>
 File: primer3.png Graphic file (type png)
 <use primer3.png>
-Package pdftex.def Info: primer3.png  used on input line 129.
+Package pdftex.def Info: primer3.png  used on input line 130.
 (pdftex.def)             Requested size: 334.04207pt x 158.99118pt.
 
-Overfull \hbox (4.04207pt too wide) in paragraph at lines 129--133
+Overfull \hbox (4.04207pt too wide) in paragraph at lines 130--134
 [][]
  []
 
@@ -346,12 +346,12 @@ Overfull \hbox (4.04207pt too wide) in paragraph at lines 129--133
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 203--211
+Underfull \hbox (badness 10000) in paragraph at lines 204--212
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 214--218
+Underfull \hbox (badness 10000) in paragraph at lines 215--219
 
  []
 
@@ -359,38 +359,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--218
 <primer4.png, id=43, 305.14pt x 275.0275pt>
 File: primer4.png Graphic file (type png)
 <use primer4.png>
-Package pdftex.def Info: primer4.png  used on input line 258.
+Package pdftex.def Info: primer4.png  used on input line 259.
 (pdftex.def)             Requested size: 152.56961pt x 137.51341pt.
- [6 <./primer4.png>] (./utuz.aux) ) 
+<primer5.png, id=44, 727.71875pt x 119.44624pt>
+File: primer5.png Graphic file (type png)
+<use primer5.png>
+Package pdftex.def Info: primer5.png  used on input line 303.
+(pdftex.def)             Requested size: 363.85847pt x 59.72296pt.
+
+Overfull \hbox (18.85847pt too wide) in paragraph at lines 303--304
+[] 
+ []
+
+[6 <./primer4.png> <./primer5.png>]
+<primer6.png, id=50, 706.64pt x 151.56625pt>
+File: primer6.png Graphic file (type png)
+<use primer6.png>
+Package pdftex.def Info: primer6.png  used on input line 324.
+(pdftex.def)             Requested size: 353.31914pt x 75.78293pt.
+
+Overfull \hbox (8.31914pt too wide) in paragraph at lines 323--325
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--361
+
+ []
+
+[7 <./primer6.png>]
+<primer7.png, id=57, 839.135pt x 209.78375pt>
+File: primer7.png Graphic file (type png)
+<use primer7.png>
+Package pdftex.def Info: primer7.png  used on input line 406.
+(pdftex.def)             Requested size: 419.56647pt x 104.8916pt.
+
+Overfull \hbox (74.56647pt too wide) in paragraph at lines 406--407
+[] 
+ []
+
+[8 <./primer7.png>] (./utuz.aux) ) 
 Here is how much of TeX's memory you used:
- 5881 strings out of 492982
- 73089 string characters out of 6134895
- 135105 words of memory out of 5000000
- 9340 multiletter control sequences out of 15000+600000
- 19417 words of font info for 55 fonts, out of 8000000 for 9000
+ 5898 strings out of 492982
+ 73332 string characters out of 6134895
+ 135702 words of memory out of 5000000
+ 9353 multiletter control sequences out of 15000+600000
+ 20193 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,35p,339b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/c
-m-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm1728.pfb>
-Output written on utuz.pdf (6 pages, 566108 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm
+-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm1728.pfb>
+Output written on utuz.pdf (8 pages, 875549 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 139 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

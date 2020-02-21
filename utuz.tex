@@ -1,3 +1,4 @@
+
 \documentclass[10pt,a4paper,]{article}
 \usepackage{ucs}
 \usepackage[T1]{fontenc}
@@ -256,4 +257,152 @@ Na reprezentativnost uzorka utiču:
 \end{itemize}
 
 \includegraphics[scale=0.5]{primer4}
+
+\textbf{Plan uzorkovanja} ('sampling design') poseduje dve osnovne 
+komponente: 
+	\begin{itemize}
+		\item metod odabira uzorka
+		\item metod zaključivanja
+	\end{itemize}
+\textbf{Metod odabira uzorka} je postupak kojim se biraju elementi
+populacije u uzorak, uz određivanje adekvatnog obima uzorka.
+\\
+Ovi metodi se mogu podeliti u dve grupe:
+	\begin{itemize}
+		\item \textbf{Verovatnosno uzorkovanje} 
+		('probability sampling')
+		\item \textbf{Neverovatnosno uzorkovanje}
+		('nonprobability sampling')
+	\end{itemize}	
+	
+	
+\subsection{Nevereovatnosno uzorkovanje}
+Ovakvi metodi uzorkovanja ne zasnivaju se na teoriji verovatnoća, 
+nego na određenim kriterijumima istraživača. 
+\\
+Dakle, njihova osnovna 
+osobina jeste da se uzorkovanje vrši na osnovu 
+\textbf{subjektivne procene 
+istraživača}, a ne slučajnim izborom. Njima se pribegava onda kada je, 
+zbog ograničenih vremenskih rokova, iznosa troškova i osetljivosti 
+predmeta istraživanja (etičkih obzira), teško sprovesti slučajno 
+uzorkovanje.
+
+\begin{itemize}
+	\item \textcolor{green}{Prednosti}:
+	efikasnije se primenjuju kod eksplorativnih istraživanja (pilot 	
+	istraživanja, studije u cilju dokazivanja koncepta, kvalitativna 
+	istraživanja, studije za generisanje hipoteza), čiji cilj nije 
+	precizno zaključivanje o parametrima populacije na osnovu 
+	reprezentativnog uzorka.
+	\item \textcolor{red}{Mane}:
+	nije moguće određivanje kvaliteta uzorka, a samim tim ni 
+	kvantifikovanje tačnosti zaključivanja (zaključivanje je ovde 
+	analitičko).
+\end{itemize}
+\includegraphics[scale=0.5]{primer5}
+
+
+
+\subsection{Verovatnosno uzorkovanje}
+Ovakvi metodi uzorkovanja zasnivaju se na teoriji verovatnoća, tj. na 
+„planiranoj“ slučajnosti. Mogući uzorci su faktički matematički 
+konstruisani, i za svakog od njih poznata je verovatnoća da bude 
+odabran. Dakle, uzorkovanje se vrši u skladu sa raspodelom 
+verovatnoća, definisanom na kolekciji svih mogućih uzoraka.
+
+\textbullet Neka je sa $\Omega $ označen skup oznaka jedinica u populaciji 
+i neka $s \subset \Omega $
+predstavlja uzorak.
+Verovatnosno uzorkovanje se zasniva na poznavanju raspodele verovatnoća $p(\bullet)$:
+$$ p(s) \geq 0,	 \forall s \subset \Omega,
+ \sum_{s \subset \Omega} p(s) = 1 $$
+
+Slučajan uzorak $S$ je onda slučajan skup oznaka jedinica sa 
+raspodelom verovatnoća:
+$$P\{S=s\} = p(s), \forall s \subset \Omega$$
+\includegraphics[scale=0.5]{primer6}
+
+\textcolor{green}{Prednosti}:
+\begin{itemize}
+ 
+	\item doslednom primenom isključuje se postojanje bilo kakve 
+	pristrasnosti, 
+	što doprinosi postizanju objektivnosti istraživanja
+	\item viši nivo pouzdanosti rezultata istraživanja
+	\item mogućnost procene / kvantifikovanja uzoračke greške
+	\item povećane su šanse za donošenje valjanih zaključaka o 
+	čitavoj populaciji, uopštavanjem rezultata dobijenih ispitivanjem uzorka
+
+\end{itemize}
+\textcolor{red}{Mane}:
+\begin{itemize}
+	\item 
+	uglavnom se tiču potreba za vremenom, resursima, finansijama i 
+	ljudstvom (npr. potrebno je posedovati kompletan okvir za odabir 
+	uzorka)
+
+\end{itemize}
+\subsection{Osnovni pojmovi, nastavak}
+Ako se na slučajan način (sa unapred određenom verovatnoćom) odabere 
+jedna jedinica iz populacije, vrednost obeležja koju ona ima nije 
+unapred poznata / određena. To znači da se vrednost obeležja slučajno 
+odabrane jedinice može shvatiti kao realizacija slučajne veličine. 
+Raspodela verovatnoća te slučajne veličina naziva se 
+\textbf{raspodela 
+obeležja}\footnote{Zadatak matematičke statistike je određivanje
+raspodele obeležja ili određivanje bar nekih opštih numeričkih 
+karakteristika te raspodele}.
+\\[0.2cm]
+\textbf{Statistika} ('statistic') je funkcija vrednosti obeležja registrovanih 
+na jedinicama iz odabranog uzorka, u kojoj eventualno mogu figurisati 
+i neke poznate konstante.\footnote{Statistika je slučajna veličina sa svojom raspodelom verovatnoća, koja se naziva \textbf{uzoračka raspodela}}
+\\
+
+
+Statistike su značajne jer se često koriste za formiranje 
+\textbf{ocena} ('estimator') parametara populacije. Realizovane vrednosti statistika su realni brojevi koji tada daju \textbf{ocene} 
+('estimate') nepoznatih parametara.
+Npr. ako je  $\theta$ nepoznata populacijska vrednost onda je 
+$\hat{\theta} = \hat{\theta(s)}$ statistika, koja predstavlja \textbf{tačkastu ocenu} ('point 
+estimator') parametra. 
+
+Često korišćene statistike ($n(S)$ predstavlja obim uzorka $S$):
+\begin{itemize}
+\item uzoračka srednja vrednost
+	$$ \overline{Y} = \frac{1}{n(S)} \sum_{k \in S}y_k$$
+\item uzorački total
+	$$ T = n(S)\overline{Y}$$
+\item uzoračka disperzija / standardno odstupanje 
+	$$ \overline{S}^2 = \frac{1}{n(S) - 1}\sum_{k \in S}(y_k - \overline{Y})^2, \overline{S} = \sqrt{\overline{S}^2}$$
+\item uzoračka proporcija 
+\item uzoračka medijana, kvantili, moda
+\end{itemize}
+Neka je $\hat{\theta}$ tačkasta ocenapopulacijske vrednosti
+$\theta$. Ona je:
+\begin{itemize}
+\item \textbf{nepristrasna} ('unbiased')
+\\
+ako jednakost \textbf{$E\hat{\theta} = \theta$} važi za svaku 
+vrednost 
+parametra $\theta$; ako ocena $\hat{\theta}$ nije nepristrasna onda 
+se ona naziva \textbf{pristrasna ocena}, a vrednošću razlike  
+$B(\hat{\theta}) := E\hat{\theta} - \theta$ meri se njena 
+\textbf{pristrasnost}.
+\item \textbf{precizna} ('precise')
+\\
+ako je disperzija $D\hat{\theta} = E(\hat{\theta} - E\hat{\theta})^2$
+ocene $\hat{\theta}$ mala (teži 0).
+
+\item \textbf{tačna} ('accurate')
+\\
+ako je srednje kvadratna greška 
+$MSE(\hat{\theta}) := E(\hat{\theta}-\theta)$ ocene $\hat{\theta}$ 
+mala.\footnote{važi i jednakost: 
+$MSE(\hat{\theta}) = D\hat{\theta} + (B(\hat{\theta}))^2$, pa je 
+ocena tačna ako je i precizna i nepristrasna.}
+
+\end{itemize}
+\includegraphics[scale=0.5]{primer7}
+
 \end{document}
