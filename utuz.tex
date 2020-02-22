@@ -405,4 +405,92 @@ ocena tačna ako je i precizna i nepristrasna.}
 \end{itemize}
 \includegraphics[scale=0.5]{primer7}
 
+
+\section{nedelja}
+\subsection{(Prost) slučajan uzorak}
+Kod (prostog) slučajnog uzorkovanja ('simple random sampling')
+\textbf{jedinica posmatranja = jedinica uzorkovanja}.
+\\
+Neka je data populacija sa $N$ jedinica, koje su u okviru za 
+odabir uzorka označene brojevima iz skupa $\Omega = \{1, 2, ..., N\}$ i neka je 
+$Y$ obeležje od interesa. Bira se uzorak obima $n$.
+\\
+
+Može biti:
+\begin{itemize}
+	\item bez ponavljanja (SRSWOR)
+	\item sa ponavljanjem (SRSWR)
+\end{itemize}
+
+
+\subsection{SRSWOR}
+Predstavlja jedan od najjednostavnijih i najstarijih metoda odabira 
+uzorka.
+Raspodela verovatnoća $p(\cdot)$ na kolekciji svih uzoraka $s \subset 
+\Omega$ data je sa:
+
+\begin{equation}
+p(s) = \begin{cases}
+	\binom{N}{n}^{-1}, \text{ako je obim uzorka } s \text{ jednak } n 
+	\\[0.2cm]
+	\ 0, \text{ inače} 
+\end{cases}
+\end{equation}
+
+
+Dakle, ovde se svaki od $\binom{N}{n}$ mogućih podskupova skupa 
+ $\Omega$ kardinalnosti $n$ sa 
+podjednakom (pozitivnom) verovatnoćom može odabrati kao uzorak
+
+
+Pomenuti plan obično se u praksi implementira jednim od sledeća dva 
+ekvivalentna postupka:
+\begin{itemize}
+	\item odabir uzorka vrši se kroz 𝑛izvlačenja („koraka“) na 
+	slučajan način, pri čemu je u svakom koraku verovatnoća 
+	izvlačenja bilo koje od jedinica, koje u ranijim koracima nisu 
+	odabrane u uzorak, ista
+	\item odabir uzorka vrši se kroz niz \textbf{nezavisnih}
+	izvlačenja na 
+	slučajan način \textbf{iz cele populacije}, pri čemu je u svakom 
+	koraku 
+	verovatnoća izvlačenja bilo koje od 
+	jedinica ista $\binom{1}{N}$,uz 
+	odbacivanje jedinica ranije odabranih u uzorak i ponavljanje 
+	koraka sve dok se ne dobije uzorak obima 𝑛
+\end{itemize}
+
+Uzorak odabran na opisani način može se prikazati i 
+kao \textbf{uređen} niz $j_1, j_2,..., j_n$oznaka jedinica koje su se našle u 
+uzorku($j_k$je oznaka $k$-te jedinice zadržane u uzorku)
+\\
+
+Uzorak odabran na opisani način može se prikazati i kao uređen niz 
+$j_1,j_2,...,j_n$ oznaka jedinica koje su se našle u uzorku
+($j_k$ je oznaka $k$-te) 
+jedinice zadržane u uzorku).Pod uzorkom se, takođe, podrazumeva i 
+pripadni niz $y_{j1},y_{j2},...,y_{jn}$vrednosti posmatranog obeležja 
+$Y$ registrovanih na odabranim jedinicama.
+\\
+
+Parovi $(j_k,y_{jk}), k=\overline{1,𝑛}$, predstavljaju 
+\textbf{podatke dobijene u 
+istraživanju}.
+
+\subsection{SRSWR}
+\textbullet	Odabir uzorka vrši se kroz $N$ nezavisnih izvlačenja na 
+slučajan način, i to uvek iz kompletne populacije, pri čemu je u 
+svakom koraku verovatnoća izvlačenja bilo koje od jedinica ista i 
+jednaka $\frac{1}{N}$.
+\\
+\textbullet 
+Raspodela verovatnoća $p(\cdot)$ na kolekciji svih uzoraka
+$s \in \Omega^n$kao 
+uređenih 
+nizova dužine 𝑛sa dozvoljenim ponavljanjem elemenata data je sa
+$p(s) = N^{-n}$
+
+\subsection{Izvlačenje jedinice na slučajan način}
+Slučajan odabir jedinice (iz populacije u uzorak) vrši se korišćenjem 
+\textbf{slučajnih} i \textbf{pseudoslučajnih brojeva}.
 \end{document}
