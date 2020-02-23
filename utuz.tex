@@ -9,8 +9,16 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{makecell}
+\usepackage{multirow}
 %\usepackage[OT2]{fontenc}
 \title{Skripta iz Uvoda u teoriju uzoraka}
+
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
 
 \begin{document}
 \maketitle
@@ -586,7 +594,165 @@ $\pi_{kl} = 1 - 2\big(\frac{N-1}{N}\big)^n
 \end{tabular}
 \end{center}
 
+
+
 \subsection{Pristupi prilikom zaključivanja}
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\makecell{\textbf{pristup zasnovan na metodu odabira uzorka}
+ \\ 
+ \textbf{('design-based approach')}}
+&
+\makecell{\textbf{pristup zasnovan na modelu}
+\\ \textbf{('model-based approach')}
+}
+
+\\
+%$$P\{\hat{\theta} = m\} = \sum_{s:\hat{\theta}(s)=m}p(s)$$
+\hline
+\makecell {
+	uzoračka raspodela statistike je\\
+	\textbf{diskretna raspodela verovatnoća}:\\
+	ako je $\hat{\theta} = \hat{\theta}(S)$ statistika, onda važi: \\
+	$P\{\hat{\theta} = m\}=\sum_{s:\hat{\theta}(s)=m}p(s)$\\
+	a njeno matematičko očekivanje i disperzija \\ 
+	izračunavaju se po formulama:\\
+	$E\hat{\theta} = \sum_{m}mP\{\hat{\theta} = m\}
+	= \sum_{s}\hat{\theta}(s)p(s)$ \\
+	$D\hat{\theta} = \sum_{s}(\hat{\theta}(s) - E\hat{\theta})^2 p(s)$
+}
+&
+\makecell {
+ uzoračka raspodela statistike\\
+ je \textbf{neka} jednodimenziona\\ 
+ \textbf{raspodela verovatnoća} određena \\
+ zajedničkom raspodelom verovatnoća\\
+ pretpostavljenog modela populacije
+}
+\\
+\hline
+\makecell {
+	\textbf{nepristrasnost} tačkaste ocene\\
+	$E\hat{\theta}$ \textbf{u odnosu na metod odabira uzorka}
+}
+&
+\makecell {
+	\textbf{nepristrasnost} tačkaste ocene\\
+	$E\hat{\theta}$ \textbf{u odnosu na metod model}
+}\\
+\hline
+
+\end{tabular}
+\end{center}
+
+
+\subsection{SRSWOR VS SRSWR tačkaste ocene}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+&
+\makecell {
+	SRSWOR
+}
+&
+\makecell {
+	SRSWR
+}
+&
+\makecell {
+	SRSWR\\
+	(u obzir se uzimaju samo različite jedinice)
+}\\
+\hline
+
+
+\makecell {
+	tačkasta ocena $\hat{m}_Y$
+}
+&
+\makecell {
+	$\frac{1}{n} \sum_{k \in S}y_k$
+}
+&
+\makecell {
+	$\frac{1}{n} \sum_{k=1}^{n}y_{jk}$
+}
+&
+\makecell {
+	$\frac{1}{n_D} \sum_{k}y_{(k)}$ 
+}\\
+\hline
+
+
+\makecell {
+	$E\hat{m}_Y$
+}
+&
+\makecell {
+	$m_Y$
+}
+&
+\makecell {
+	$m_Y$
+}
+&
+\makecell {
+	$m_Y$
+}\\
+\hline
+
+
+\makecell {
+	$D\hat{m}_Y$
+}
+&
+\makecell {
+	$\frac{\sigma^2}{n}\big(1 - \frac{n}{N}\big)$
+}
+&
+\makecell {
+	$\frac{N-1}{N} \frac{\sigma^2}{n}$
+}
+&
+\makecell {
+	$\sum_{k=1}^{N-1}\frac{k^{n-1}}{N^n}\sigma^2$
+}\\
+\hline
+
+
+
+\makecell {
+	tačkasta ocena $D\hat{m}_Y$
+}
+&
+\makecell {
+	$\frac{\overline{S}^2}{n}\big(1 - \frac{n}{N}\big)$
+}
+&
+\makecell {
+	$\frac{\overline{S}^2}{n}$
+}
+&
+\\
+\hline
+
+
+\end{tabular}
+\end{center}
+\footnote{$n_D$ je \textbf{efektivan obim uzorka}, tj. obim redukovanog
+	uzorka $(y_{(1)}, y_{(2)}, ..., y_{n_D})$ u kome su izostavljena
+	eventualna ponavljanja jedinica iz originalnog uzorka
+}
+
+
+gde je $\sigma^2$ (nepoznata) populacijska disperzija, a $\overline{S}^2$
+(poznata) uzoračka disperzija. 
+\footnote{može se pokazati da je $\hat{S}^2$ nepristrasna ocena $\sigma^2$}
+
+
+\subsection{Novi pojmovi}
 
 
 \end{document}
