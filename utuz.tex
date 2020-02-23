@@ -493,4 +493,100 @@ $p(s) = N^{-n}$
 \subsection{Izvlačenje jedinice na slučajan način}
 Slučajan odabir jedinice (iz populacije u uzorak) vrši se korišćenjem 
 \textbf{slučajnih} i \textbf{pseudoslučajnih brojeva}.
+\\
+Slučajni brojevi obično se dobijaju pomoću tzv. 
+\textbf{fizičkih
+generatora}
+(TRNG –'true random number generator').
+\begin{itemize}
+\item u makro svetu: bacanje fer novčića / 
+kockica, slučajan izbor karte iz špila / kuglice 
+iz kutije, rulet itd.
+\item u mikro svetu: prirodni fenomeni za koje važe zakonitosti kvantne mehanike, šum itd.
+\end{itemize}
+Oni su sadržani u tzv. \textbf{tablicama slučajnih brojeva}.
+\\[0.1cm]
+Pseudoslučajni brojevi se dobijaju pomoću tzv. \textbf{programskih generatora}
+(PRNG –'pseudorandom number generator').
+To su računarski programi koji koriste izvestan algoritam za dobijanje niza brojeva čija 
+svojstva, u određenoj meri, oponašaju svojstva niza slučajnih brojeva.
+
+\subsection{Novi pojmovi}
+\begin{itemize}
+	\item \textbf{Indikator uključenja} ('inclusion indicator')
+	\begin{equation}
+		I_k = \begin{cases}
+		1, \text{  ako je jedinica označena sa } k \text{ odabrana u uzorak} \\
+		0, \text{  inače}
+		\end{cases}
+	\end{equation}
+	\item \textbf{Verovatnoća uključenja} ('inclusion probability') 
+	prvog, odnosno drugog reda:\\
+	$\pi_k$ - verovatnoća da jedinica označena sa $k$ bude odabrana u uzorak\\
+	$\pi_{kl}$ - verovatnoća da i jedinica označena sa $k$ i jedinica označena sa $l$ budu 
+	odabrane u uzorak
+	\item \textbf{'Težina' uzorkovanja} ('sampling weight')
+	recipročna vrednost očekivanog broja pojavljivanja jedinice označene sa $k$ u uzorku
+	(što 
+	se, kod uzorka bez ponavljanja, svodi na recipročnu vrednost verovatnoće uključenja 
+	prvog reda $\pi_k$) \footnote{može se interpretirati kao broj jedinica u populaciji 
+	koje reprezentuje jedinica označena sa $k$}.
+	
+\end{itemize}
+\subsection{SRSWOR VS SRSWR}
+\begin{center}
+\begin{tabular}{|p{6cm}|p{6cm}|}
+\hline
+SRSWOR & SRSWR \\
+\hline
+Verovatnoća uključenja prvog reda: 
+&
+Verovatnoća uključenja prvog reda: \\
+$ \pi_k = \frac{n}{N} \text{ za svako } k$
+&
+$ \pi_k = 1 - (\frac{N-1}{N})^n \text{ za svako } k $
+\\
+\hline
+
+Verovatnoća da će jedinica označena sa $k$ biti odabrana u uzorak u $j$-tom koraku:
+&
+Verovatnoća da će jedinica označena sa $k$ biti 
+odabrana u uzorak u $j$-tom koraku:
+\\
+
+$\frac{1}{N}$
+&
+$\frac{1}{N}$\\
+\hline
+
+&
+Verovatnoća da će jedinica označena sa $k$ biti odabrana u uzorak više od jedanput:\\
+
+&
+$1 - \big(\frac{N-1}{N}\big)^{n-1}\big(\frac{N-1-n}{N}\big)$ \\
+\hline
+
+Očekivanibroj pojavljivanja jedinice označene sa $k$ u uzorku:
+&
+Očekivanibroj pojavljivanja jedinice označene sa $k$ u uzorku: \\
+$\pi_k$
+&
+$\frac{n}{N}$ \\
+\hline
+Verovatnoća uključenja drugog reda:
+&
+Verovatnoća uključenja drugog reda: \\
+
+$\pi_{kl} = \frac{n(n-1)}{N(N-1)} \text{ za } k \neq l$
+&
+$\pi_{kl} = 1 - 2\big(\frac{N-1}{N}\big)^n 
++ \big(\frac{N-2}{N}\big)^n \text{ za } k \neq l$\\
+\hline
+
+\end{tabular}
+\end{center}
+
+\subsection{Pristupi prilikom zaključivanja}
+
+
 \end{document}
