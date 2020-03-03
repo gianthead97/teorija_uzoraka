@@ -11,6 +11,7 @@
 \usepackage{xcolor}
 \usepackage{makecell}
 \usepackage{multirow}
+\usepackage{multicol}
 %\usepackage[OT2]{fontenc}
 \title{Skripta iz Uvoda u teoriju uzoraka}
 
@@ -772,7 +773,7 @@ $$CV(\hat{\theta}) := \frac{SE(\hat{\theta})}{E\hat{\theta}}$$
 i koji predstavlja meru varijabilnosti ocene.
 
 
-\subsection{SRSW(O)R tačaste ocene}
+\subsection{SRSW(O)R tačaste ocene} \label{srswor_tackaste}
 Neka je sa $S$ označen slučajan uzorak bez ponavljanja obima $n$. 
 Kada je \textbf{pristup zasnovan na modelu}, 
 vrlo jednostavan model populacije bio bi model u kome su slučajne veličine 
@@ -783,4 +784,87 @@ tabeli:\\
 \includegraphics[scale=0.6]{primer8.png}
 gde je $\sigma_Y^2 := DY$ disperzija obeležja,
 a $\overline{S}^2$ (poznata) uzoračka disperzija.
+
+\section{nedelja}
+
+\subsection{SRSW(O)R - intervalne ocene}
+Pretpostavlja se model populacije sa prethodnog slajda
+(poglavlje \ref{srswor_tackaste}), pri čemu obeležje $Y$ ima konačnu 
+srednju vrednost i disperziju.
+
+\textbullet Ako je obim uzorka $n$ „dovoljno veliki“ (u praksi je dovoljno već 
+$n \geq 30$), na 
+osnovu važenja Centralne granične teoreme, \textbf{aproksimativni} $100 * (1-\alpha)\%$
+(dvostrani) 
+\textbf{interval poverenja} za nepoznatu srednju vrednost $m_Y$ 
+obeležja $Y$, dat je sa:
+$$\Bigg[\overline{Y} - z_{1-\alpha /2}\sqrt{\frac{\sigma_{Y}^2}{n}},
+	\overline{Y} + z_{1-\alpha /2}\sqrt{\frac{\sigma_{Y}^2}{n}}\Bigg]
+$$\footnote{$\sigma_{Y}^2 \text{ ocenjujemo sa } \overline{S}^2$}
+
+gde je $z_{1-\alpha /2}$ vrednost $1 - \alpha / 2$ - kvantila standardne normalne
+raspodele.
+
+\includegraphics[scale=0.2]{primer9.png}
+
+Ako je obim uzorka $n$ manji od 30, gornja aproksimacija ne važi, 
+pa se primenjuje egzaktan 
+metod, koji na osnovu pretpostavki modela daje tačne intervale poverenja sa nivoom 
+poverenja \textbf{ne manjim} od $1-\alpha$.
+\\[0.2cm]
+Specijalno, ako obeležje $Y$ ima normalnu $\mathcal{N}(m_Y,\sigma_{Y}^2)$ raspodelu 
+\textbf{tačan}
+$100 (1 - \alpha)\%$(dvostrani) \textbf{interval poverenja} za nepoznatu srednju vrednost $m_Y$:
+
+\begin{itemize}
+\item kada je $\sigma_{Y}^2$ poznato dat je sa:
+$$\Bigg[\overline{Y} - z_{1-\alpha /2}\sqrt{\frac{\sigma_{Y}^2}{n}},
+	\overline{Y} + z_{1-\alpha /2}\sqrt{\frac{\sigma_{Y}^2}{n}}\Bigg]
+$$
+gde je $z_{1-\alpha /2}$ vrednost $1 - \alpha / 2$ - kvantila standardne normalne
+raspodele.
+
+\item kada je $\sigma_{Y}^2$ nepoznato dat je sa:
+$$\Bigg[\overline{Y} - t_{n-1;1-\alpha /2}\sqrt{\frac{\overline{S}^2}{n}},
+	\overline{Y} + t_{n-1; 1-\alpha /2}\sqrt{\frac{\overline{S}^2}{n}}\Bigg]
+$$
+
+gde je $t_{n-1; 1-\alpha /2}$ vrednost $(1 - \alpha / 2)$-kvantila Studentove raspodele
+sa $(n-1)$ stepeni slobode.
+\\
+Za veliki obim uzorka iz obeležja sa normalnom raspodelom praktično nema razlike kada je 
+disperzija obeležja $Y$ poznata i kada nije, jer se tada Studentova raspodela dobro 
+aproksimira $\mathcal{N}(0,1)$ raspodelom.
+   
+
+\end{itemize}
+
+
+\subsection{SRSWOR VS SRSWR intervalne ocene}
+Neka je sa $\mathcal{S}$ označen (prost) slučajan uzorak dovoljno velikog obima $n$. 
+Ključni asimptotski 
+rezultati u vezi sa intervalnom ocenom nepoznate populacijske srednje vrednosti $m_Y$, 
+kada je 
+pristup zasnovan na metodu SRSWOR, odnosno SRSWR odabira uzorka, dati su u sledećoj 
+tabeli:\\
+\includegraphics[scale=0.4]{primer10.png}
+
+
+\subsection{Interpretacija nivoa poverenja}
+\begin{multicols}{2}
+Interpretacija nivoa poverenjaInterpretacija intervala poverenja,odnosno odgovarajućeg 
+nivoa poverenja $1-\alpha/2$, \textbf{razlikuje se} u zavisnosti odpristupa prilikom zaključivanja.
+
+\includegraphics[scale=0.5]{primer11.png}
+\end{multicols}
+
+
+\subsection{Određivanje obima uzorka}
+Neka je $\hat{\theta}$ tačkasta ocenanepoznate populacijske vrednosti $\theta$. 
+Nakon preciziranja apsolutne 
+(dozvoljene) greške('margin of error') $\Delta$ za 
+zadati nivo poverenja $1-\alpha$, pitanje se svodi na 
+određivanje vrednosti $n$ tako da važi.
+
+
 \end{document}
