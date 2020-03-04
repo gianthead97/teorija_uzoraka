@@ -860,11 +860,63 @@ nivoa poverenja $1-\alpha/2$, \textbf{razlikuje se} u zavisnosti odpristupa pril
 
 
 \subsection{Određivanje obima uzorka}
+Jedno je od prvih pitanja pri planiranju istraživanja, a odgovor na njega nije uvek 
+jednostavan. Suštinski, radi se o odlučivanju o tome kolika je (uzoračka) greška 
+prihvatljiva prilikom zaključivanja, pri čemu se obično mora uravnotežiti tačnost 
+zaključivanja sa troškovima istraživanja.
+\\
 Neka je $\hat{\theta}$ tačkasta ocenanepoznate populacijske vrednosti $\theta$. 
 Nakon preciziranja apsolutne 
 (dozvoljene) greške('margin of error') $\Delta$ za 
 zadati nivo poverenja $1-\alpha$, pitanje se svodi na 
-određivanje vrednosti $n$ tako da važi.
+određivanje vrednosti $n$ tako da važi
+$$ P \{ |\hat{\theta} - \theta| > \Delta \} < \alpha $$
+Npr. ako je $\hat{\theta}$
+nepristrasna, normalno raspodeljena ocena parametra $\theta$ onda 
+$$P\left\{\frac{|\hat{\theta} - \theta|}{\sqrt{D\hat{\theta}}}
+	> z_{1-\frac{\alpha}{2}}\right\} 
+	= P \left\{|\hat{\theta} - \theta| > 
+	z_{1-\frac{\alpha}{2}}\sqrt{D\hat{\theta}}\right\}
+	= \alpha
+$$
+
+pa kako disperzija ocene $\hat{\theta}$ opada sa obimom uzorka $n$, 
+onda će gornja nejednakost biti 
+zadovoljena ako se odabere dovoljno veliko $n$ tako da važi 
+\\[0.15cm]
+
+Najjednostavnija jednačina za određivanje obima uzorka za ocenjivanje nepoznate 
+populacijske srednje vrednosti $m_Y$, tako da se postigne apsolutna greška 
+ne veća od $\Delta$ sa 
+poverenjem $1-\alpha$, može se dobiti na osnovu aproksimativnih intervala poverenja:
+\\
+\includegraphics[scale=0.5]{primer12.png}
+
+Pored opisanog kriterijuma određivanja obima uzorka zadavanjem apsolutne greške ocene, 
+postoje i drugi kriterijumi i to:
+\begin{itemize}
+\item zadavanjem širine intervala poverenja
+\item zadavanjem gornje granice disperzije / standardne greške ocene
+\item zadavanjem relativne greške ocene
+\end{itemize}
+
+
+Neka je $\hat{\theta}$ tačkasta ocenane poznate populacijske vrednosti $\theta$.
+Nakon preciziranja \textbf{relativne 
+greške} $p$ za zadati nivo poverenja $1-\alpha$, 
+pitanje se se svodi na određivanje vrednosti $n$ tako da 
+važi
+$$ P\left\{\frac{|\hat{\theta} - \theta|}{\theta} > p \right\} < \alpha$$
+\begin{itemize}
+\item zadavanjem koeficijenta varijacije ocene
+\item zadavanjem troškova uzorkovanja
+\end{itemize}
+
+Rezultati koji se tiču nepoznatog populacijskog totala $\tau_Y$ potpunosti su 
+analogni prikazanim rezultatima u vezi sa nepoznatom 
+populacijskom srednjom vrednošću $m_Y$.
+
+
 
 
 \end{document}
