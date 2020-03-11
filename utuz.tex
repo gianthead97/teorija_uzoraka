@@ -23,6 +23,8 @@
 
 \begin{document}
 \maketitle
+\tableofcontents
+\newpage
 
 \section{nedelja}
 \subsection{Naučno istraživanje}
@@ -918,5 +920,79 @@ populacijskom srednjom vrednošću $m_Y$.
 
 
 
+\section{nedelja (primeri)}
 
+\includegraphics[scale=0.35]{nedelja_4_1.png}\\
+\includegraphics[scale=0.4]{nedelja_4_2.png}\\
+\includegraphics[scale=0.4]{nedelja_4_3.png}\\
+
+\subsection{SRSW(O)R ocenjivanje proporcije}
+Pretpostavi se da je istraživač zainteresovan za neko kvalitativno svojstvo jedinica 
+posmatrane populacije.
+\\
+Populacijska proporcija $p$ predstavlja udeo jedinica populacije koje 
+pripadaju posmatranom nivou kategoričke promenljive od interesa, tj.
+$$p = \frac{\text{broj jedinica u populaciji koje poseduju dato svojstvo}}{N}$$
+
+Sa statističkog stanovišta cilj je oceniti nepoznati parametar $p$, pri čemu je obeležje
+$Y$ indikatorska slučajna veličina, data sa:
+
+\begin{equation}
+Y = 
+\begin{cases}
+1, \text{ ako jedinica poseduje dato svojstvo} \\
+0, \text{ inače}
+\end{cases}
+\end{equation}
+
+Za ovako definisano obeležje od interesa, populacijska srednja vrednost zapravo je 
+populacijska proporcija, pa se mogu koristiti svi ključni rezultati u vezi sa ocenjivanjem 
+nepoznate srednje vrednosti.
+\\[0.2cm]
+
+\includegraphics[scale=0.35]{nedelja_4_4.png}\\
+\includegraphics[scale=0.4]{nedelja_4_5.png}\\
+\includegraphics[scale=0.4]{nedelja_4_6.png}\\
+\includegraphics[scale=0.35]{nedelja_4_7.png}\\
+\includegraphics[scale=0.35]{nedelja_4_8.png}\\
+\includegraphics[scale=0.35]{nedelja_4_9.png}\\
+
+
+\subsection{SRSWOR - ocenjivanje parametara populacije}
+Neka je obim posmatrane populacije $N$ i neka je $N_l$broj jedinica te populacije koje pripadaju 
+njenoj $l$-toj potpopulaciji. Neka je sa $y_{lk}$ označena vrednost obeležja $Y$ entiteta označenog sa $k$, 
+koji potiče iz $l$-te potpopulacije. Potpopulacijski total, odnosno srednja vrednost,dati su 
+sa
+\begin{equation}
+\tau_l = \sum_{k=1}^{N_l}y_{lk}, \text{                 }
+ m_l = \frac{1}{N_l}\sum_{k=1}^{N_l}y_{lk}
+\end{equation}
+
+
+\begin{tabular}{p{7cm}}
+tačkasta ocena \hspace{0.5cm} $\frac{1}{n_l}\sum_{k \in S_l}y_{lk}$ \\
+\hline
+$E\hat{m}_l$    \hspace{2cm}  $m_l$\\
+\hline
+$D\hat{m}_l$    \hspace{2cm}   $\sigma_l^2\left(E\left(\frac{1}{n_l}\right) - \frac{1}{N_l}\right)$\\
+\hline
+tačkasta ocena $D\hat{m}_l$  \hspace{0.5cm} 
+$\frac{\overline{S}_l^2}{n_l}\left(1 - \frac{n_l}{N_l}\right)$\\
+\hline
+\end{tabular}
+\\[0.2cm]
+kada je obim $N_l l$-te potpopulacije nepoznat(što je često slučaj),faktor korekcije zbog konačnostipopulacije $1 - \frac{n_l}{N_l}$, zamenjuje se svojimmatematičkim očekivanjem 
+$1- \frac{n}{N}$.
+\\
+
+$\sigma_{l}^2$ (nepoznata) potpopulacijska disperzijaza jedinice iz $l$-te potpopulacije,a $S_l^2$ (poznata) uzoračka disperzijaza jedinice iz poduzorka $S_l$.
+\\
+
+Ako je \textbf{poznat} obim \textbf{$N_l$} $l$-te potpopulacije rezultati koji se tiču nepoznatog potpopulacijskog 
+totala lako se dobijajuiz onih za potpopulacijsku srednju vrednost $m_l$ korišćenjem veze: 
+$\tau_l = N_lm_l$.
+\\
+Ako \textbf{nije poznat} obim $N_l$ kao nepristrasna ocena za 
+$\tau_l$ može se koristiti statistika:
+$$\hat{\tau}_l = \frac{N}{n}\sum_{k \in S_l}y_{lk}$$
 \end{document}

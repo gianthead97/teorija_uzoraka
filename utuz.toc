@@ -1,0 +1,27 @@
+\babel@toc {serbian}{}
+\contentsline {section}{\numberline {1}nedelja}{2}
+\contentsline {subsection}{\numberline {1.1}Nau\IeC {\v c}no istra\IeC {\v z}ivanje}{2}
+\contentsline {subsection}{\numberline {1.2}Osnovni pojmovi}{2}
+\contentsline {subsection}{\numberline {1.3}Tipovi obele\IeC {\v z}ja}{4}
+\contentsline {subsection}{\numberline {1.4}Nevereovatnosno uzorkovanje}{7}
+\contentsline {subsection}{\numberline {1.5}Verovatnosno uzorkovanje}{8}
+\contentsline {subsection}{\numberline {1.6}Osnovni pojmovi, nastavak}{8}
+\contentsline {section}{\numberline {2}nedelja}{10}
+\contentsline {subsection}{\numberline {2.1}(Prost) slu\IeC {\v c}ajan uzorak}{10}
+\contentsline {subsection}{\numberline {2.2}SRSWOR}{10}
+\contentsline {subsection}{\numberline {2.3}SRSWR}{10}
+\contentsline {subsection}{\numberline {2.4}Izvla\IeC {\v c}enje jedinice na slu\IeC {\v c}ajan na\IeC {\v c}in}{11}
+\contentsline {subsection}{\numberline {2.5}Novi pojmovi}{11}
+\contentsline {subsection}{\numberline {2.6}SRSWOR VS SRSWR}{11}
+\contentsline {subsection}{\numberline {2.7}Pristupi prilikom zaklju\IeC {\v c}ivanja}{12}
+\contentsline {subsection}{\numberline {2.8}SRSWOR VS SRSWR ta\IeC {\v c}kaste ocene}{12}
+\contentsline {subsection}{\numberline {2.9}Novi pojmovi}{13}
+\contentsline {subsection}{\numberline {2.10}SRSW(O)R ta\IeC {\v c}aste ocene}{13}
+\contentsline {section}{\numberline {3}nedelja}{13}
+\contentsline {subsection}{\numberline {3.1}SRSW(O)R - intervalne ocene}{13}
+\contentsline {subsection}{\numberline {3.2}SRSWOR VS SRSWR intervalne ocene}{15}
+\contentsline {subsection}{\numberline {3.3}Interpretacija nivoa poverenja}{15}
+\contentsline {subsection}{\numberline {3.4}Odre\IeC {\dj }ivanje obima uzorka}{15}
+\contentsline {section}{\numberline {4}nedelja (primeri)}{17}
+\contentsline {subsection}{\numberline {4.1}SRSW(O)R ocenjivanje proporcije}{18}
+\contentsline {subsection}{\numberline {4.2}SRSWOR - ocenjivanje parametara populacije}{20}
